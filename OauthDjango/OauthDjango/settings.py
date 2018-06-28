@@ -8,7 +8,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-HOST = 'https://oauth.geek-ealine.xyz'
+HOST = 'http://127.0.0.1'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -59,10 +59,10 @@ AUTH_USER_MODEL = 'core.User'
 DATABASES= {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'oauth_django',
+        'NAME': 'test',
         'USER': 'root',
         'PASSWORD': '127521yzz',
-        'HOST': 'http://oauth.geek-ealine.xyz',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
