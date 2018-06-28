@@ -1,13 +1,8 @@
 /* eslint-disable camelcase */
-// export const BASE_URL = process.env === 'development' ? 'http://127.0.0.1:8000' : 'https://q.aiopos.cn/v1';
-
-// let _base_url = 'https://www.shellcasher.com/v1';
 let _base_url = 'http://127.0.0.1:8000/v1'
 if (process && process.env && process.env.NODE_ENV === 'production') {
-  // _base_url = 'https://oauth.geek-ealine.xyz/v1'
   _base_url = 'https://oauth.ealine.cn/v1'
 }
-console.log('==_base_url==', _base_url)
 export const BASE_URL = _base_url
 
 export const ApiReq = async function (obj, apiUrl, params, usePost = false) {
