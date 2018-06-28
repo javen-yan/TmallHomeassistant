@@ -1,0 +1,6 @@
+peewee
+click
+Django
+mysqlclient
+requests
+uwsgi
