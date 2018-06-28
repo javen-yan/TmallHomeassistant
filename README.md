@@ -44,5 +44,13 @@ python3 modity.py
 
 接下来你会看到一下信息，请按照自己的实际情况配置相关参数
 
-! [第一步](file:./doc/step1.png)   
+![step1](./doc/step1.png)  
+
+![step2](./doc/step2.png)
+
+![step3](./doc/step3.png)
+
+![step4](./doc/step4.png)
+
+  经过这些配置后，这整个项目呢就是你的个人专属了，下面的工作就是部署到服务器上了，后面的工作说起来挺简单，其实也不太难，哈哈
 
